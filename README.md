@@ -1,9 +1,9 @@
 # Getting started
 
-Fast, secure, and easy integrations
+This repository contains the open source C# client for TransmitSMS REST API. Documentation can be found at: https://developer.transmitsms.com/
 
 API authentication will require your API Key and Secret.
-Obtain these by logging into your BurstSMS account and visiting the settings page.
+Obtain these by logging into your account and visiting the settings page.
 
 ## How to Build
 
@@ -71,8 +71,8 @@ In order to setup authentication and initialization of the API client, you need 
 
 | Parameter | Description |
 |-----------|-------------|
-| apikey | Obtain your API Key by logging into BurstSMS and visiting the settings page |
-| apisecret | Obtain your API Secret by logging into BurstSMS and visiting the settings page |
+| apikey | Obtain your API Key by logging into your account and visiting the settings page |
+| apisecret | Obtain your API Secret by logging into your account and visiting the settings page |
 
 
 
@@ -80,8 +80,8 @@ API client can be initialized as following.
 
 ```csharp
 // Configuration parameters and credentials
-string apikey = "APIKEY"; // Obtain your API Key by logging into BurstSMS and visiting the settings page
-string apisecret = "APISECRET"; // Obtain your API Secret by logging into BurstSMS and visiting the settings page
+string apikey = "APIKEY"; // Obtain your API Key by logging into your account and visiting the settings page
+string apisecret = "APISECRET"; // Obtain your API Secret by logging into your account and visiting the settings page
 
 TransmitSMSClient client = new TransmitSMSClient(apikey, apisecret);
 ```
@@ -1061,7 +1061,7 @@ dynamic result = await lists.GetContact(listId, msisdn, format);
 
 ### <a name="add_contacts_bulk"></a>![Method: ](https://apidocs.io/img/method.png "TransmitSMS.Standard.Controllers.ListsController.AddContactsBulk") AddContactsBulk
 
-> Upload a list of contacts to Burst SMS
+> Upload a list of contacts 
 
 
 ```csharp
